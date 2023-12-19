@@ -78,10 +78,10 @@ docker compose up -d
 chalice local
 ```
 
-## Conhecendo as API
+## Conhecendo a API
 A API possui CRUD para todas as entidades existentes. São elas:
 
-### /rule_actions
+### `/rule_actions`
 São as ações que uma regra pode acionar. A mesma ação pode ser acionada por diferentes regras.
 * GET `/rule_actions/{ID}`: Obtém uma ação pelo ID
 * POST `/rule_actions`: Cria uma ação
@@ -118,7 +118,7 @@ Exemplo pro tipo Fulfillment
 ```
 
 
-### /rules
+### `/rules`
 São as regras que contém condições dinâmicas de acordo com um evento.
 
 * GET `/rules/{ID}`: Obtém uma regra pelo ID
@@ -158,7 +158,7 @@ Uma regra pode ter multiplos filtros. As operações suportadas são:
 * `ends_with`
 
 
-### /orders e /payments
+### `/orders` e `/payments`
 São os eventos que a API suporta atualmente. O conteudo/payload desses eventos são prerrogativa do cliente/usuário.
 * GET `/orders/{ID}` ou `/payments/{ID}`: Obtém um evento pelo ID
 * POST `/orders` ou `/payments`: Cria um evento
