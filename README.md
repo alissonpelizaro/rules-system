@@ -30,8 +30,8 @@ Em outras palavras, com todas essas integrações acima, é possivel criar regra
 * Dar baixa no banco de dados quando um pagamento acontecer
 * etc...
 
-![image](https://github.com/alissonpelizaro/rules-system/.assets/infra.png)
-![image](https://github.com/alissonpelizaro/rules-system/.assets/Diagram.drawio.png)
+![image](https://raw.githubusercontent.com/alissonpelizaro/rules-system/master/.assets/infra.png)
+![image](https://raw.githubusercontent.com/alissonpelizaro/rules-system/master/.assets/Diagram.drawio.png)
 
 As definições de todas as rotas podem ser acessadas [aqui](https://documenter.getpostman.com/view/28677630/2s9Ykoe2N8).
 
