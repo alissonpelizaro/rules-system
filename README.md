@@ -49,33 +49,33 @@ As definições de todas as rotas podem ser acessadas [aqui](https://documenter.
 Após clonar e acessar o projeto, e com seu ambiente virtual Python devidamente ativado (saiba como ativar [aqui](https://www.infoworld.com/article/3239675/virtualenv-and-venv-python-virtual-environments-explained.html)), execute o seguinte comando para instalar as dependências do projeto:
 
 ```sh
-$ pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 
 ### Migração do Banco de dados
 Para faciliar a execução local, há um `Makefile` com os comandos prontos. Se seu SO for compatível com comandos `make`, execute o seguinte comando para criar e executar a migração do banco de dados:
 
 ```sh
-$ make migrate
+make migrate
 ```
 
 Caso seu SO não seja compatível com comandos `make`, execute:
 ```sh
-$ docker compose up -d postgres
-$ alembic upgrade head
+docker compose up -d postgres
+alembic upgrade head
 ```
 
 ### Iniciando os serviços
  Se seu SO for compatível com comandos `make`, execute o seguinte comando para subir a aplicação:
 
 ```sh
-$ make up
+make up
 ```
 
 Caso seu SO não seja compatível com comandos `make`, execute:
 ```sh
-$ docker compose up -d
-$ chalice local
+docker compose up -d
+chalice local
 ```
 
 ## Conhecendo as API
@@ -113,7 +113,7 @@ Exemplo pro tipo Fulfillment
 {
     "name": "Minha ação que executa Python!",
     "action": "fulfillment",
-    "data": "print('Sou um script Pyhton!')"
+    "data": "print('Sou um script Python!')"
 }
 ```
 
